@@ -7,145 +7,177 @@ const gitdb = {
     {
       command: "git init",
       meaning:
-        "Create empty Git repo in specified directory. Run with no to initialize arguments to initialize the current directory as  a git repository"
+        "Create empty Git repo in specified directory. Run with no to initialize arguments to initialize the current directory as  a git repository",
+      rating:"4/5",
     },
     {
       command: "git clone",
       meaning:
-        "Clone repo located at <repo> onto local machine. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH"
+        "Clone repo located at <repo> onto local machine. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH",
+       rating:"4/5",
     },
     {
       command: "git config",
       meaning:
         "Define author name to be used for all commits in current repo. Devs commonly use --global flag to set config options for current user."
+      ,
+       rating:"4/5",
     },
     {
       command: "git add",
       meaning:
-        "Stage all changes in <directory> for the next commit.Replace <directory> with a <file> to change a specific file"
+        "Stage all changes in <directory> for the next commit.Replace <directory> with a <file> to change a specific file",
+       rating:"4/5",
     },
     {
       command: "git status",
       meaning: "List which files are staged, unstaged, and untracked."
+      ,
+       rating:"4/5",
     },
     {
       command: "git log",
       meaning: "List which files are staged, unstaged, and untracked."
+      ,
+       rating:"4/5",
     },
     {
       command: "git diff",
       meaning: "Show unstaged changes between your index andworking directory."
+      ,
+       rating:"4/5",
     }
   ],
 
   Git_Branches: [
     {
       command: "git branch",
-      meaning: "List all branches in the repository"
+      meaning: "List all branches in the repository",
+       rating:"4/5",
     },
     {
       command: "git branch -a",
-      meaning: "List all remote branches"
+      meaning: "List all remote branches",
+       rating:"4/5",
     },
     {
       command: "git branch [branch]",
-      meaning: "Create a new branch under a specified name"
+      meaning: "Create a new branch under a specified name",
+       rating:"4/5",
     },
     {
       command: "git checkout [branch]",
       meaning:
-        "switch to another branch (either an existing one or by creating a new one under the specified name]"
+        "switch to another branch (either an existing one or by creating a new one under the specified name]",
+       rating:"4/5",
     },
     {
       command: "git log [branch1]..[branch2]",
       meaning:
-        "Compare two branches by showing which commits from the first branch are missing from the second branch"
+        "Compare two branches by showing which commits from the first branch are missing from the second branch",
+       rating:"4/5",
     },
 
     {
       command: "git branch -d [branch]",
-      meaning: "Delete a local branch"
+      meaning: "Delete a local branch",
+       rating:"4/5",
     },
     {
       command: "git branch -m [new_branch_name]",
-      meaning: "Rename a branch you are currently working in"
+      meaning: "Rename a branch you are currently working in",
+       rating:"4/5",
     },
     {
       command: "git merge [branch]",
-      meaning: "Merge the specified branch with the current branch"
+      meaning: "Merge the specified branch with the current branch",
+       rating:"4/5",
     }
   ],
   Git_Undo: [
     {
       command: "git revert <commit>",
       meaning:
-        "Create new commit that undoes all of the changes made in <commit>, then apply it to the current branch."
+        "Create new commit that undoes all of the changes made in <commit>, then apply it to the current branch.",
+       rating:"4/5",
     },
     {
       command: "git reset <file>",
       meaning:
-        "Remove <file> from the staging area, but leave the working directory unchanged. This unstages a file without overwriting any changes."
+        "Remove <file> from the staging area, but leave the working directory unchanged. This unstages a file without overwriting any changes.",
+       rating:"4/5",
     },
     {
       command: "git clean -n",
       meaning:
-        "Shows which files would be removed from working directory.Use the -f flag in place of the -n flag to execute the clean."
+        "Shows which files would be removed from working directory.Use the -f flag in place of the -n flag to execute the clean.",
+       rating:"4/5",
     }
   ],
   Git_Reset: [
     {
       command: "git reset",
       meaning:
-        "Reset staging area to match most recent commit,but leave the working directory unchanged."
+        "Reset staging area to match most recent commit,but leave the working directory unchanged.",
+       rating:"4/5",
     },
     {
       command: "git reset --hard",
       meaning:
-        "Reset staging area and working directory to match most recent  commit and overwrites all changes in the working directory."
+        "Reset staging area and working directory to match most recent  commit and overwrites all changes in the working directory.",
+       rating:"4/5",
     },
     {
       command: "git reset <commit>",
       meaning:
-        "Move the current branch tip backward to <commit>, reset the staging area to match, but leave the working directory alone."
+        "Move the current branch tip backward to <commit>, reset the staging area to match, but leave the working directory alone.",
+       rating:"4/5",
     },
     {
       command: "git reset --hard <commit>",
       meaning:
-        "Same as previous, but resets both the staging area & working directory to match. Deletes uncommitted changes, and all commits after <commit>"
+        "Same as previous, but resets both the staging area & working directory to match. Deletes uncommitted changes, and all commits after <commit>",
+       rating:"4/5",
     }
   ],
   Git_Rebase: [
     {
       command: "git rebase -i <base>",
       meaning:
-        "Interactively rebase current branch onto <base>. Launches editor to enter commands for how each commit will be transferred to the new base."
+        "Interactively rebase current branch onto <base>. Launches editor to enter commands for how each commit will be transferred to the new base.",
+       rating:"4/5",
     }
   ],
   Git_Push: [
     {
       command: "git push <remote> --force",
       meaning:
-        "Forces the git push even if it results in a non-fast-forward merge. Do not use the --force flag unless you’re absolutely sure you know what you’re doing"
+        "Forces the git push even if it results in a non-fast-forward merge. Do not use the --force flag unless you’re absolutely sure you know what you’re doing",
+       rating:"4/5",
     },
     {
       command: "git push <remote> --all",
-      meaning: "Push all of your local branches to the specified remote"
+      meaning: "Push all of your local branches to the specified remote",
+       rating:"4/5",
     },
     {
       command: "git push <remote> --tags",
-      meaning: "Push all of your local branches to the specified remote"
+      meaning: "Push all of your local branches to the specified remote",
+       rating:"4/5",
     }
   ],
   Git_Pull: [
     {
       command: "git pull <remote>",
       meaning:
-        "Fetch the specified remote’s copy of current branch and immediately merge it into the local copy"
+        "Fetch the specified remote’s copy of current branch and immediately merge it into the local copy",
+       rating:"4/5",
     },
     {
       command: "git pull --rebase <remote>",
       meaning:
-        "Fetch the remote’s copy of current branch and rebases it into the local copy. Uses git rebase instead of merge to integrate the branches"
+        "Fetch the remote’s copy of current branch and rebases it into the local copy. Uses git rebase instead of merge to integrate the branches",
+       rating:"4/5",
     }
   ]
 };
@@ -211,6 +243,11 @@ export default function App() {
               <div className="descp" style={{ fontSize: "smaller" }}>
                 {" "}
                 {book.meaning}{" "}
+              </div>
+
+<div className="descp" style={{ fontSize: "smaller" }}>
+                {" "}
+                {book.rating}{" "}
               </div>
             </li>
           ))}
